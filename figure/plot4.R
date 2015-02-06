@@ -15,7 +15,7 @@ par(mfcol=c(2,2))
 par(mar=c(4,4,2,2))
 
 #Plot Graph 1
-with (feb1_2,plot(as.POSIXlt(paste(as.Date(Date,format="%d/%m/%Y"),Time,sep="")),Global_active_power,type="l",xlab="", ylab="Global Active Power (kilowatts)"))
+with (feb1_2,plot(as.POSIXlt(paste(as.Date(Date,format="%d/%m/%Y"),Time,sep="")),Global_active_power,type="l",xlab="", ylab="Global Active Power"))
 
 #Plot graph 2
 plot(as.POSIXlt(paste(as.Date(feb1_2$Date,format="%d/%m/%Y"),feb1_2$Time,sep="")),feb1_2$Sub_metering_1,type="n",xlab="", ylab="Energy sub metering")
